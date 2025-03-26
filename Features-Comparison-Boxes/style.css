@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: cairo;
+    box-sizing: border-box;
+}
+span {
+    text-transform: uppercase;
+}
+body {
+    background-color: #f5f5f5;
+}
+/* --- */
+/* the main container */
+section.container {
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+/* --- */
+/* styling the headings */
+h3 {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+section.container > div:nth-child(1) h3 {
+    background-color: #f54336;
+}
+section.container > div:nth-child(2) h3 {
+    background-color: #2294f2;
+    position: relative;
+}
+/* styling the offer badge */
+section.container > div:nth-child(2) h3::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -62px;
+
+    border: #2294f2 solid 27px;
+    border-right-color: transparent;
+}
+section.container > div:nth-child(2) h3::after {
+    content: "save 50%";
+    position: absolute;
+    right: 33px;
+    top: -62px;
+
+    background-color: #2294f2;
+    padding: 7px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* --- */
+/* styling the lists */
+section.container > div ul li {
+    padding: 10px 10px 10px 45px;
+    list-style: none;
+    background-color: #fff;
+    position: relative;
+}
+section.container > div ul li:not(:last-child) {
+    border-bottom: 1.5px #f5f5f5 solid;
+}
+/* --- */
+/* True and Worng Mark */
+.true,
+.worng {
+    position: absolute;
+    inset: 50% 17px;
+    transform: translateY(-50%);
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.true::before,
+.worng::before,
+.worng::after {
+    content: "";
+    position: absolute;
+    inset: 50%;
+    width: 10px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+/* true mark */
+.true {
+    background-color: #009688;
+}
+.true::before {
+    width: 7px;
+    background-color: transparent;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* worng mark */
+.worng {
+    background-color: #e81e61;
+}
+.worng::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.worng::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* @media Responsive */
+@media (max-width: 531px) {
+    section.container {
+        width: 100%;
+        padding: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    }
+}

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #adadad;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+/* creating framework */
+.container > .dark {
+    background-color: #000;
+    color: white;
+}
+.description {
+    color: #aaafb5;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+/* starting the project */
+.caption {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.main-content {
+    color: #757575;
+}
+.container {
+    margin: 30px 20px;
+    max-width: 1000px;
+    min-width: 500px;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template-areas:
+    "one one . ."
+    ". see see .";
+}
+.container > div {
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: #ff470f 3px solid;
+    padding: 15px;
+    position: relative;
+    &::after {
+    content: '"';
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    font-size: 60px;
+    transform: rotate(10deg);
+    color: #aaafb5;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    }
+}
+/* child grid */
+.one {
+    grid-area: one;
+}
+.three {
+    grid-row: 1 / span 3;
+}
+.four {
+    grid-row: 2 / span 2;
+}
+.five {
+    grid-area: see;
+}
+.six {
+    grid-column: 2 / span 2;
+}

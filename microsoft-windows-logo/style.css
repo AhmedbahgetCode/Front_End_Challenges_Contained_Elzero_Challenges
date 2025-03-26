@@ -1,0 +1,15 @@
+div {
+    width: 150px;
+    aspect-ratio: 1;
+
+    position: absolute;
+    inset: 50%;
+    translate: -50% -50%;
+
+    background-color: #787878;
+    box-shadow: 
+    #7cba00 76px -76px,
+    #f55314 -76px -76px,
+    #00a1f2 -76px 76px,
+    #ffbb00 76px 76px;
+}

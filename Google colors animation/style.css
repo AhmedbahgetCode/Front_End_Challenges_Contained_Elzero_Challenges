@@ -56,7 +56,7 @@ body {
         var(--g-red, #ea4335) 25% 37.5%,
         var(--g-yellow, #fbbc05) 37.5% 50%
     );
-    animation: google-animation 6s infinite linear;
+    animation: google-animation 3s infinite linear;
 }
 
 @keyframes google-animation {

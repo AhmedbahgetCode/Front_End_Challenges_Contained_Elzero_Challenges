@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+:root {
+    --g-blue: #4285f4;
+    --g-green: #34a853;
+    --g-red: #ea4335;
+    --g-yellow: #fbbc05;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #3d3d3d;
+}
+
+hr {
+    border-color: var(--g-blue);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-transform: capitalize;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.pie {
+    aspect-ratio: 1;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    color: white;
+}
+
+.pie > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* first pie */
+.pie-1 {
+    background-image: conic-gradient(
+        from 90deg,
+        var(--g-red) 0% 33.33%,
+        var(--g-blue) 33.33% 66.33%,
+        var(--g-green) 66.33% 100%
+    );
+}
+
+.pie-1 :nth-child(1) {
+    transform: translate(-118px, -50%);
+}
+
+.pie-1 :nth-child(2) {
+    transform: translate(-15px,  40px);
+}
+
+.pie-1 :nth-child(3) {
+    transform: translate(-15px,  -60px);
+}
+
+/* second pie */
+.pie-2 {
+    background-image: conic-gradient(
+        from calc(180deg + 45deg),
+        var(--g-red) 0% 25%,
+        var(--g-blue) 25% 50%,
+        var(--g-green) 50% 75%,
+        var(--g-yellow) 75% 100%
+    );
+}
+
+.pie-2 :nth-child(1) {
+    transform: translate(-120px, -50%);
+}
+.pie-2 :nth-child(2) {
+    transform: translate(-50%, -80px);
+}
+.pie-2 :nth-child(3) {
+    transform: translate(25px, -50%);
+    width: 100px;
+}
+.pie-2 :nth-child(4) {
+    transform: translate(-50%, 55px);
+}

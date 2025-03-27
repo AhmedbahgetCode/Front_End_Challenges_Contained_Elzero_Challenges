@@ -13,5 +13,5 @@
 
 ### sub challenges <mark>in the same repo</mark>
 
-1.[holy grail layout](https://ahmedbahgetcode.github.io/Elzero_Front_End_Challenges/holy%20grail%20layout)
-2.[pie charts](https://ahmedbahgetcode.github.io/Elzero_Front_End_Challenges/pie%20charts)
+1. [holy grail layout](https://ahmedbahgetcode.github.io/Elzero_Front_End_Challenges/holy%20grail%20layout)
+2. [pie charts](https://ahmedbahgetcode.github.io/Elzero_Front_End_Challenges/pie%20charts)

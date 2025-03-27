@@ -17,5 +17,6 @@
 2. [pie charts](https://ahmedbahgetcode.github.io/Elzero_Front_End_Challenges/pie%20charts)
 
 #### Table Test
+
 | table | good | job |
 | hi | no | body |

@@ -1,0 +1,43 @@
+* {
+    font-family: cairo;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.holy-grail {
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.holy-grail > * {
+    background-color: #dddeed;
+}
+.main-content {
+    display: flex;
+    gap: 10px;
+    flex-basis: 85%;
+    background-color: transparent;
+}
+.main-content div {
+    background-color: #dddeed;
+}
+.content {
+    flex-basis: 52%;
+}
+.aside {
+    flex-basis: 23%;
+}
+.content,
+.aside {
+    padding: 20px;
+}
+header,
+footer {
+    flex-basis: calc(15% / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

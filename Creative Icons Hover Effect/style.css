@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #fff;
+    padding: 6rem 3rem 3rem;
+
+    background: fixed linear-gradient(transparent, #070707 70%),
+      fixed
+        repeating-linear-gradient(
+          #2b2b2b,
+          #2b2b2b 1px,
+          transparent 1px,
+          transparent 40px
+        ),
+      fixed
+        repeating-linear-gradient(
+          to right,
+          #2b2b2b,
+          #2b2b2b 1px,
+          transparent 1px,
+          transparent 40px
+        )
+        #070707;
+}
+
+h1,
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.copy-right {
+    margin-top: 6.5rem;
+    text-align: center;
+}
+
+.copy-right a {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* social icons effects */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.social a {
+    text-decoration: none;
+    color: #636363;
+    background-color: #2b2b2b;
+    font-size: 2.2rem;
+    inline-size: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.6s 0.3s ease-in-out, --fill 0.6s 0.3s ease-in-out;
+}
+
+@property --fill {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+.social a::before,
+.social a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -5px;
+    border-radius: inherit;
+    background: conic-gradient(
+        currentColor var(--fill),
+        transparent var(--fill)
+    );
+}
+
+.social a:hover,
+.social a:hover::before,
+.social a:hover::after {
+    transition-delay: 0s;
+}
+
+.social a:hover,
+.social a:focus-visible,
+.social a:focus-within {
+    color: greenyellow;
+}
+
+/* Effect 1 */
+.social a:nth-child(1):hover,
+.social a:nth-child(1):focus-visible,
+.social a:nth-child(1):focus-within {
+    --fill: 100%
+}
+
+.social a:nth-child(1)::after {
+    display: none;
+}
+
+/* Effect 2 */
+.social a:nth-child(2):hover,
+.social a:nth-child(2):focus-visible,
+.social a:nth-child(2):focus-within {
+    --fill: 100%
+}
+
+.social a:nth-child(2)::before {
+    transform: scaleX(-1);
+}
+
+.social a:nth-child(2)::after {
+    display: none;
+}
+
+/* Effect 3 */
+.social a:nth-child(3):hover,
+.social a:nth-child(3):focus-visible,
+.social a:nth-child(3):focus-within {
+    --fill: 50%
+}
+
+.social a:nth-child(3)::after {
+    transform: scaleX(-1);
+}
+
+/* Effect 4 */
+.social a:nth-child(4):hover,
+.social a:nth-child(4):focus-visible,
+.social a:nth-child(4):focus-within {
+    --fill: 50%
+}
+
+.social a:nth-child(4)::before {
+    transform: rotateX(180deg);
+}
+
+.social a:nth-child(4)::after {
+    transform: rotate(180deg);
+}
+
+/* Effect 5 */
+.social a:nth-child(5):hover,
+.social a:nth-child(5):focus-visible,
+.social a:nth-child(5):focus-within {
+    --fill: 50%
+}
+
+.social a:nth-child(5)::after {
+    transform: rotate(180deg);
+}
+
+/* Effect 6 */
+.social a:nth-child(6):hover,
+.social a:nth-child(6):focus-visible,
+.social a:nth-child(6):focus-within {
+    --fill: 50%
+}
+
+.social a:nth-child(6)::before {
+    transform: rotate(-90deg);
+}
+
+.social a:nth-child(6)::after {
+    transform: rotate(90deg);
+}

@@ -5,6 +5,8 @@
 }
 
 body {
+    --main-color: greenyellow;
+    
     font-family: system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.7;
@@ -52,13 +54,23 @@ h2 {
     color: white;
 }
 
+.copy-right a:hover {
+    color: #dadada;
+}
+
+.copy-right a:active {
+    color: var(--main-color);
+}
+
 /* social icons effects */
 .social {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.7rem;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 37rem;
 }
 
 .social a {
@@ -96,92 +108,135 @@ h2 {
     );
 }
 
-.social a:hover,
-.social a:hover::before,
-.social a:hover::after {
+a:hover,
+a:hover::before,
+a:hover::after {
     transition-delay: 0s;
 }
 
 .social a:hover,
 .social a:focus-visible,
 .social a:focus-within {
-    color: greenyellow;
+    color: var(--main-color);
 }
 
 /* Effect 1 */
 .social a:nth-child(1):hover,
 .social a:nth-child(1):focus-visible,
 .social a:nth-child(1):focus-within {
+    color: #fc0032;
     --fill: 100%
 }
 
-.social a:nth-child(1)::after {
+a:nth-child(1)::after {
     display: none;
 }
 
 /* Effect 2 */
-.social a:nth-child(2):hover,
-.social a:nth-child(2):focus-visible,
-.social a:nth-child(2):focus-within {
+a:nth-child(2):hover,
+a:nth-child(2):focus-visible,
+a:nth-child(2):focus-within {
     --fill: 100%
 }
 
-.social a:nth-child(2)::before {
+a:nth-child(2)::before {
     transform: scaleX(-1);
 }
 
-.social a:nth-child(2)::after {
+a:nth-child(2)::after {
     display: none;
 }
 
 /* Effect 3 */
-.social a:nth-child(3):hover,
-.social a:nth-child(3):focus-visible,
-.social a:nth-child(3):focus-within {
+a:nth-child(3):hover,
+a:nth-child(3):focus-visible,
+a:nth-child(3):focus-within {
+    color: #fc255c;
     --fill: 50%
 }
 
-.social a:nth-child(3)::after {
+a:nth-child(3)::after {
     transform: scaleX(-1);
 }
 
 /* Effect 4 */
-.social a:nth-child(4):hover,
-.social a:nth-child(4):focus-visible,
-.social a:nth-child(4):focus-within {
+a:nth-child(4):hover,
+a:nth-child(4):focus-visible,
+a:nth-child(4):focus-within {
+    color: #2980ba;
     --fill: 50%
 }
 
-.social a:nth-child(4)::before {
+a:nth-child(4)::before {
     transform: rotateX(180deg);
 }
 
-.social a:nth-child(4)::after {
+a:nth-child(4)::after {
     transform: rotate(180deg);
 }
 
 /* Effect 5 */
-.social a:nth-child(5):hover,
-.social a:nth-child(5):focus-visible,
-.social a:nth-child(5):focus-within {
+a:nth-child(5):hover,
+a:nth-child(5):focus-visible,
+a:nth-child(5):focus-within {
     --fill: 50%
 }
 
-.social a:nth-child(5)::after {
+a:nth-child(5)::after {
     transform: rotate(180deg);
 }
 
 /* Effect 6 */
-.social a:nth-child(6):hover,
-.social a:nth-child(6):focus-visible,
-.social a:nth-child(6):focus-within {
+a:nth-child(6):hover,
+a:nth-child(6):focus-visible,
+a:nth-child(6):focus-within {
     --fill: 50%
 }
 
-.social a:nth-child(6)::before {
+a:nth-child(6)::before {
     transform: rotate(-90deg);
 }
 
-.social a:nth-child(6)::after {
+a:nth-child(6)::after {
     transform: rotate(90deg);
+}
+
+
+a:nth-child(7)::before,
+a:nth-child(7)::after,
+a:nth-child(8)::before,
+a:nth-child(8)::after {
+    filter: blur(11px);
+    inset: -1px;
+}
+
+/* Effect 7 */
+a:nth-child(7):hover,
+a:nth-child(7):focus-visible,
+a:nth-child(7):focus-within {
+    --fill: 50%
+}
+
+a:nth-child(7)::before {
+    transform: rotate(-90deg);
+}
+
+a:nth-child(7)::after {
+    transform: rotate(90deg);
+}
+
+/* Effect 8 */
+a:nth-child(8):hover,
+a:nth-child(8):focus-visible,
+a:nth-child(8):focus-within {
+    color: #ffc204;
+    --fill: 100%
+}
+
+a:nth-child(8)::before {
+    transform: scaleX(-1);
+}
+
+a:nth-child(8)::after {
+    display: none;
 }

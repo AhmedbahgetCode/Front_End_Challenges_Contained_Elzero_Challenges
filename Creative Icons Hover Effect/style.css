@@ -179,6 +179,7 @@ a:nth-child(4)::after {
 a:nth-child(5):hover,
 a:nth-child(5):focus-visible,
 a:nth-child(5):focus-within {
+    color: #0057ff;
     --fill: 50%
 }
 

@@ -14,5 +14,4 @@
 ### sub challenges <mark>Live Demo</mark>
 
 1. [holy grail layout](https://ahmedbahgetcode.github.io/Front_End_Challenges_Contained_Elzero_Challenges/holy%20grail%20layout)
-2. [pie charts](https://ahmedbahgetcode.github.io/Front_End_Challenges_Contained_Elzero_Challenges/pie%20charts)
-3. [Creative Icons Hover Effect](https://ahmedbahgetcode.github.io/Front_End_Challenges_Contained_Elzero_Challenges/Creative%20Icons%20Hover%20Effect/)
+2. [Creative Icons Hover Effect](https://ahmedbahgetcode.github.io/Front_End_Challenges_Contained_Elzero_Challenges/Creative%20Icons%20Hover%20Effect/)
